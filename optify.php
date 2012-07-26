@@ -108,9 +108,6 @@ class OptifyService implements Optify
 		$status = curl_getinfo($c, CURLINFO_HTTP_CODE);
 		curl_close($c);
 
-		print($url. "\n");
-		print($status . "\n");
-
 		switch ($status) {
 		case 200:
 			break;
